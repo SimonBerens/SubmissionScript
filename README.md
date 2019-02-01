@@ -16,7 +16,7 @@ For access at all times:
 
 Write 
 ```
-cp <wherever you cloned it>/SubmissionScript/submit ~/bin
+cp <wherever you cloned it>/SubmissionScript/submit ~/bin # (for if you decide to git pull)
 export PATH=$PATH:~/bin
 ```
 into your ~/.bashrc
