@@ -14,11 +14,10 @@ export PATH=$PATH:~/bin
 ```
 For access at all times:
 
-Append 
 ```
-cp <root path>/submit ~/bin # (for if you decide to git pull)
-export PATH=$PATH:~/bin
+git clone https://github.com/SimonBerens/SubmissionScript
+mkdir ~/bin # can fail if exists
+echo "cp <$PWD>/SubmissionScript/submit ~/bin; export PATH=$PATH:~/bin" >> ~/.bashrc
 ```
-to your ~/.bashrc
 
 After setup, just type `submit` in the github repo you want to submit
