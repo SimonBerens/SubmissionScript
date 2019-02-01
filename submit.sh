@@ -1,0 +1,28 @@
+# Run this in the directory of the directory of the project you want to submit
+# Your directory must have the same case insensitive name as the assignment repo
+# Don't have a directory called tmp outside of the repo you call the script in
+# First Name
+fname="Simon"
+# Last Name
+lname="Berens"
+# Github Username
+username="SimonBerens"
+# Period
+pd=4
+# Class code
+cc="mks66"
+
+# Do not modify!
+dir=${PWD##*/}
+cd ".."
+mkdir "tmp"
+cd "tmp"
+git clone "https://github.com/${cc}/${dir}"
+cd "${dir}/${pd}"
+tmp=${fname,,}
+tmp=${fname^}
+git submodule add "https://github.com/${username}/${dir}" "${lname,,}${tmp:0:2}"
+git commit -am "Add ${fname}'s submodule"
+git push
+cd ../../..
+rm -rf ./tmp
