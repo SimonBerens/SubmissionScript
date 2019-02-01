@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Run this in the directory of the directory of the project you want to submit
 # Your directory must have the same case insensitive name as the assignment repo
 # Don't have a directory called tmp outside of the repo you call the script in
