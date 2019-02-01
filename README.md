@@ -20,3 +20,5 @@ cp <wherever you cloned it>/SubmissionScript/submit ~/bin # (for if you decide t
 export PATH=$PATH:~/bin
 ```
 into your ~/.bashrc
+
+After setup, just type `submit` in the github repo you want to submit
