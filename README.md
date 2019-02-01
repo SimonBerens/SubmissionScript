@@ -7,16 +7,16 @@ Edit the variables above the "Do not modify!" appropriately
 
 For one time use:
 ```
-cd ~
-mkdir bin
-cp <wherever you cloned it>/SubmissionScript/submit ~/bin
+git clone https://github.com/SimonBerens/SubmissionScript
+mkdir ~/bin # can fail if exists
+cp SubmissionScript/submit ~/bin
 export PATH=$PATH:~/bin
 ```
 For access at all times:
 
 Append 
 ```
-cp <wherever you cloned it>/SubmissionScript/submit ~/bin # (for if you decide to git pull)
+cp <root path>/submit ~/bin # (for if you decide to git pull)
 export PATH=$PATH:~/bin
 ```
 to your ~/.bashrc
