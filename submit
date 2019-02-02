@@ -21,7 +21,7 @@ cd "tmp"
 git clone "https://github.com/${cc}/${dir}"
 cd "${dir}/${pd}"
 tmp=${fname,,}
-tmp=${fname^}
+tmp=${tmp^}
 git submodule add "https://github.com/${username}/${dir}" "${lname,,}${tmp:0:2}"
 git commit -am "Add ${fname}'s submodule"
 git push
